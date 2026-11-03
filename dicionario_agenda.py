@@ -1,7 +1,7 @@
 agenda = dict()# Criando um dicionário vazio
 
 while True:
-    print("Agenda Eletrônica\n")
+    print("\nAgenda Eletrônica\n")
     print("1 - Inserir")
     print("2 - Excluir")
     print("3 - Consultar")

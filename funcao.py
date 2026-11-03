@@ -1,19 +1,21 @@
-# função sem parametro e sem retorno
+#1º função sem parametro e sem retorno
 def exibirNome():
     nome = input("Qual é o seu nome? ")
     print(f"Olá {nome}, tudo bem? ")
-
+    
 # chamando a função
-exibirNome()
+#exibirNome()
+#---------------------------------------- 
 
-# 2º chamando uma função dcom parametro e sem retorno
+#2º chamando uma função com parametro e sem retorno
 def somar(num1, num2):
     print(f"A soma é: {num1+num2}")
 
 # chamando a função
-somar(2, 10)
+#somar(2, 10)
+#----------------------------------------
 
-# função sem parametro e com retorno
+#3º função sem parametro e com retorno
 def dobro():
     valor = int(input("Informe um valor numerico: "))
     valor = float(input("Informe um valor numerico: "))
@@ -21,4 +23,15 @@ def dobro():
     return resposta
 
 # chamando a função
-print(f"O dobro é {dobro()}")
+#print(f"O dobro é {dobro()}")
+#----------------------------------------
+
+#4º FUNÇÃO COM PARÂMETRO E COM RETORNO
+def triplo(valor):
+    return valor * 3
+
+#chamando a função 
+resposta = triplo(5)# fazendo uma variável receber o conteúdo retornado da função
+print(resposta)
+
+print(f"O triplo de 43 é: {triplo(43)}")
