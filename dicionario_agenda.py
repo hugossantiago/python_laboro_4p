@@ -11,18 +11,25 @@ def menu():
 #----------------------------------------------------------
 #FUNÇÃO INSERIR
 def inserir():
-    nome = input("Informe o nome do contato: ")
-    agenda[nome] = int(input(f"Qual o número de {nome}: "))
+    try:
+        nome = input("Informe o nome do contato: ")
+        agenda[nome] = int(input(f"Qual o número de {nome}: "))
+            
+        print("Contato inserido com sucesso!")
+        print(agenda)
         
-    print("Contato inserido com sucesso!")
-    print(agenda)
+    except Exception:
+        print("Operação inválida. Contato não salvo!")
     
 #FUNÇÃO EXCLUIR
 def excluir(valor):
-      del agenda[valor]
-      
-      print(f"O contato {valor} foi excluído com sucesso")
-      print(agenda)
+    if valor in agenda:
+        del agenda[valor]
+        print(f"O contato {valor} foi excluído com sucesso")
+        print(agenda)
+    else: 
+        print(f"O contato {valor} não existe na agenda")
+        print("Contato não excluído")
       
 #FUNÇÃO CONSULTAR
 def consultar():
